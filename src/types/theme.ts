@@ -1,6 +1,7 @@
 export interface ITheme {
   primaryBg: string;
   secondaryBg: string;
+  addBtnBg: string;
   primaryText: string;
   error: string;
 }

@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import ImageCard from "../ImageCard";
 import { Body, Container, Header } from "./styled";
+import AddImageCard from "../AddImageCard";
 const Gallery = () => {
   return (
     <Container>
@@ -10,7 +11,7 @@ const Gallery = () => {
         <h2>Gallery</h2>
         <p>
           <FontAwesomeIcon icon={faTrashAlt} />
-          Delete
+          Delete file
         </p>
       </Header>
 
@@ -33,7 +34,7 @@ const Gallery = () => {
         <ImageCard />
         <ImageCard />
         <ImageCard />
-        <ImageCard />
+        <AddImageCard />
       </Body>
     </Container>
   );
