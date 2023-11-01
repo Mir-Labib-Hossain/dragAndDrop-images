@@ -1,10 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-    html {
-        box-sizing: border-box;
-        scroll-behavior: smooth;
-    }
 
     * {
         margin: 0;
@@ -13,6 +9,15 @@ const GlobalStyle = createGlobalStyle`
 
     *, *:before, *:after {
         box-sizing: inherit;
+    }
+
+    html {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    body{
+        background-color:  ${({ theme }) => theme.secondaryBg};
     }
 
     /* a{
