@@ -1,6 +1,6 @@
 import { faImage } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Card } from "./srtled";
+import { Card } from "./styled";
 type Props = { large?: boolean };
 
 const AddImageCard = ({ large }: Props) => {

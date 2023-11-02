@@ -1,9 +1,11 @@
 import { Card } from "./srtled";
 
-type Props = { large?: boolean };
+type Props = { image: string,selected?:boolean };
 
-const ImageCard = ({ large }: Props) => {
-  return <Card large={large}>ImageCard</Card>;
+const ImageCard = ({ image }: Props) => {
+  return <Card image={image}>
+    <input type="checkbox"/>
+  </Card>;
 };
 
 export default ImageCard;

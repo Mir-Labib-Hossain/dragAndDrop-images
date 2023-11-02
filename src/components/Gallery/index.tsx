@@ -1,9 +1,10 @@
 import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import img1 from "../../assets/image-1.webp";
+import AddImageCard from "../AddImageCard";
 import ImageCard from "../ImageCard";
 import { Body, Container, Header } from "./styled";
-import AddImageCard from "../AddImageCard";
 const Gallery = () => {
   return (
     <Container>
@@ -16,24 +17,24 @@ const Gallery = () => {
       </Header>
 
       <Body>
-        <ImageCard large />
-        <ImageCard />
-        <ImageCard />
-        <ImageCard />
-        <ImageCard />
-        <ImageCard />
-        <ImageCard />
-        <ImageCard />
-        <ImageCard />
-        <ImageCard />
-        <ImageCard />
-        <ImageCard />
-        <ImageCard />
-        <ImageCard />
-        <ImageCard />
-        <ImageCard />
-        <ImageCard />
-        <ImageCard />
+        <ImageCard image={img1} />
+        <ImageCard image={img1} />
+        <ImageCard image={img1} />
+        <ImageCard image={img1} />
+        <ImageCard image={img1} />
+        <ImageCard image={img1} />
+        <ImageCard image={img1} />
+        <ImageCard image={img1} />
+        <ImageCard image={img1} />
+        <ImageCard image={img1} />
+        <ImageCard image={img1} />
+        <ImageCard image={img1} />
+        <ImageCard image={img1} />
+        <ImageCard image={img1} />
+        <ImageCard image={img1} />
+        <ImageCard image={img1} />
+        <ImageCard image={img1} />
+        <ImageCard image={img1} />
         <AddImageCard />
       </Body>
     </Container>
