@@ -6,6 +6,7 @@ import GlobalStyle from "./styles/global.styled.tsx";
 import { ITheme } from "./types/theme.ts";
 
 const theme:ITheme = {
+  primary: "#53E762",
   primaryBg: "#FFF",
   secondaryBg: "#EDF1F7",
   addBtnBg:"#FAFAFA",

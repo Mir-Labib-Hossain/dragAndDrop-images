@@ -20,6 +20,9 @@ const GlobalStyle = createGlobalStyle`
         background-color:  ${({ theme }) => theme.secondaryBg};
     }
 
+    svg{
+        color:  ${({ theme }) => theme.primary};
+    }
     /* a{
         text-decoration: none;
         cursor: pointer;
