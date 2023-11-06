@@ -7,7 +7,7 @@ import styled from "styled-components";
 export const ThemeToggler = styled.div`
   position: absolute;
   right: 0;
-  top: 150px;
+  top: 180px;
   background-color: ${({ theme }) => theme.primary};
   padding: 10px;
   border-radius: 50% 0 0 50%;

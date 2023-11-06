@@ -25,6 +25,7 @@ export const Github = styled.a`
 
 export const TypeToggler = styled.div`
   position: absolute;
+  text-align: right;
   right: 0;
   top: 100px;
   background-color: ${({ theme }) => theme.primary};

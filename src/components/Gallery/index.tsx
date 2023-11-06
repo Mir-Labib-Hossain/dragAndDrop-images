@@ -50,11 +50,11 @@ const Gallery = () => {
       <TypeToggler onClick={() => setShowRawGallery((prev) => !prev)}>
         {showRawGallery ? (
           <>
-            <FontAwesomeIcon icon={faToggleOn} /> Showing DnD with Raw JS
+            <FontAwesomeIcon icon={faToggleOn} /> Showing project <br /> created with Raw JS
           </>
         ) : (
           <>
-            <FontAwesomeIcon icon={faToggleOff} /> Showing DnD using NPM
+            <FontAwesomeIcon icon={faToggleOff} /> Showing project <br />created using NPM
           </>
         )}
       </TypeToggler>
