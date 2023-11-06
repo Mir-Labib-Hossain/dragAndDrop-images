@@ -5,7 +5,8 @@ import { images as data } from "../../utils/data";
 import Header from "../Header";
 import Npm from "./Npm";
 import RawJS from "./RawJS";
-import { Body, Main, TypeToggler } from "./styled";
+import { Body, Github, Main, TypeToggler } from "./styled";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Gallery = () => {
   const [images, setImages] = useState<IImage[]>(data);
@@ -57,6 +58,7 @@ const Gallery = () => {
           </>
         )}
       </TypeToggler>
+      <Github href="https://github.com/Mir-Labib-Hossain/dragAndDrop-images" target="_blank"><FontAwesomeIcon icon={faGithub} /></Github>
       {/* //// HEADER */}
       <Header totalSelected={selectedIds.length} handleDelete={handleDelete} handleUnSelectAll={() => setSelectedIds([])} />
       <Body>
@@ -71,6 +73,7 @@ const Gallery = () => {
         {/* //// BODY */}
         {showRawGallery ? <RawJS images={images} selectedIds={selectedIds} handleSelectIds={handleSelectIds} handleAddImage={handleAddImage} updateArray={(newArr) => setImages(newArr)} /> : <Npm images={images} selectedIds={selectedIds} handleSelectIds={handleSelectIds} handleAddImage={handleAddImage} updateArray={(newArr) => setImages(newArr)} />}
       </Body>
+      
     </Main>
   );
 };

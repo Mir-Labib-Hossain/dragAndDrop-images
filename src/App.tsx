@@ -29,7 +29,7 @@ function App() {
   return (
     <ThemeProvider theme={isLight ? light : dark}>
       <GlobalStyle />
-      <ThemeToggler onClick={() => setIsLight((prev) => !prev)}>{isLight ? <FontAwesomeIcon icon={faSun} /> : <FontAwesomeIcon icon={faMoon} />}</ThemeToggler>
+      <ThemeToggler onClick={() => setIsLight((prev) => !prev)}>{isLight ? <FontAwesomeIcon icon={faMoon} /> : <FontAwesomeIcon icon={faSun} />}</ThemeToggler>
       <Gallery />
     </ThemeProvider>
   );

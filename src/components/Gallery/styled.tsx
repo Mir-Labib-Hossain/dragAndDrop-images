@@ -8,6 +8,21 @@ export const Main = styled.div`
   background-color: ${({ theme }) => theme.primaryBg};
 `;
 
+export const Github = styled.a`
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+  background-color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.primaryText};
+  padding: 10px;
+  border-radius: 20px 0 0 20px;
+  z-index: 999999999;
+  cursor: pointer;
+  svg{
+    color: ${({ theme }) => theme.primaryText};
+  }
+`
+
 export const TypeToggler = styled.div`
   position: absolute;
   right: 0;
