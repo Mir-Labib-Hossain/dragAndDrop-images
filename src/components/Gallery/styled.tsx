@@ -59,7 +59,6 @@ export const DeleteButton = styled.button`
 
 export const Body = styled.div`
   position: relative;
-
   /* padding: 30px; */
   & > div:first-child {
     background-color: ${({ theme }) => theme.primaryBg};
@@ -79,20 +78,6 @@ export const GridContainer = styled.div`
   grid-template-columns: repeat(5, 1fr); /* Creates 5 equal-width columns */
   gap: 1rem; /* Adjusting the gap as needed */
   padding: 30px;
-  & > div {
-    aspect-ratio: 1 / 1;
-    cursor: grab;
-    & > div {
-      height: 100%;
-      /* background-color: ${({ theme }) => theme.secondaryBg}; */
-    }
-  }
-
-  //// style for large 'image-card'
-  & > div:first-child {
-    grid-column: span 2;
-    grid-row: span 2;
-  }
 
   @media only screen and (max-width: 850px) {
     grid-template-columns: repeat(4, 1fr); /* Creates 4 equal-width columns */
@@ -104,6 +89,24 @@ export const GridContainer = styled.div`
     grid-template-columns: repeat(2, 1fr); /* Creates 2 equal-width columns */
   }
 
+  // each image-card's wrapper
+  & > div {
+    aspect-ratio: 1 / 1;
+    cursor: grab;
+    // each image-card component
+    & > div {
+      height: 100%;
+    }
+  }
+
+  //// style for large 'image-card'
+
+  & > div:first-child {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  //// style for dragging-item
   .dragging {
     cursor: grabbing !important;
     box-shadow: 2px 20px 30px rgba(0, 0, 0, 0.2);

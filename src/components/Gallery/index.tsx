@@ -1,11 +1,9 @@
-import { faImages } from "@fortawesome/free-regular-svg-icons";
-import { faSquareCheck, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRef, useState } from "react";
 import { images as data } from "../../utils/data";
 import AddImageCard from "../AddImageCard";
+import Header from "../Header";
 import ImageCard from "../ImageCard";
-import { Body, DeleteButton, GridContainer, Header, Main } from "./styled";
+import { Body, GridContainer, Main } from "./styled";
 
 const Gallery = () => {
   const [images, setImages] = useState<IImage[]>(data);
@@ -171,24 +169,7 @@ const Gallery = () => {
 
   return (
     <Main>
-      <Header>
-        {selectedIds.length > 0 ? (
-          <>
-            <h2>
-              <FontAwesomeIcon icon={faSquareCheck} onClick={() => setSelectedIds([])} /> File{selectedIds.length > 1 && "s"} Selected
-            </h2>
-            <div>
-              <DeleteButton onClick={handleDelete}>
-                <FontAwesomeIcon icon={faTrashAlt} /> Delete file{selectedIds.length > 1 && "s"}
-              </DeleteButton>
-            </div>
-          </>
-        ) : (
-          <h2>
-            <FontAwesomeIcon icon={faImages} /> Gallery
-          </h2>
-        )}
-      </Header>
+      <Header totalSelected={selectedIds.length} handleDelete={handleDelete} handleUnSelectAll={() => setSelectedIds([])} />
       <Body>
         {/* //// background grid-items with border only*/}
         <GridContainer ref={dragContainerRef}>
