@@ -177,9 +177,11 @@ const Gallery = () => {
             <h2>
               <FontAwesomeIcon icon={faSquareCheck} onClick={() => setSelectedIds([])} /> File{selectedIds.length > 1 && "s"} Selected
             </h2>
-            <DeleteButton onClick={handleDelete}>
-              <FontAwesomeIcon icon={faTrashAlt} /> Delete file{selectedIds.length > 1 && "s"}
-            </DeleteButton>
+            <div>
+              <DeleteButton onClick={handleDelete}>
+                <FontAwesomeIcon icon={faTrashAlt} /> Delete file{selectedIds.length > 1 && "s"}
+              </DeleteButton>
+            </div>
           </>
         ) : (
           <h2>
@@ -193,7 +195,7 @@ const Gallery = () => {
           {images.map((image) => (
             <div key={`grid-item-${image.id}`}></div>
           ))}
-          <div></div>
+          <div className="dummy-button-placeholder"></div>
         </GridContainer>
 
         {/* //// real grid-items with border only*/}

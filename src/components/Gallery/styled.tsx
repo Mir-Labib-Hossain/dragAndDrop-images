@@ -85,7 +85,6 @@ export const GridContainer = styled.div`
     & > div {
       height: 100%;
       /* background-color: ${({ theme }) => theme.secondaryBg}; */
-      
     }
   }
 

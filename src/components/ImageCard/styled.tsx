@@ -14,8 +14,10 @@ export const Card = styled.div<{ image: string; selected?: boolean }>`
     transition: 0.3s ease-in-out;
     cursor: pointer;
     opacity: ${({ selected }) => (selected ? 1 : 0)}; // used 'opacity' instead of 'display' for better animation
-    background-color: #fff;
-    border-radius: 4px;
+    border-radius: 2px;
+    &.fa-square{
+      color: #FFF;
+    }
   }
 
   &:hover {

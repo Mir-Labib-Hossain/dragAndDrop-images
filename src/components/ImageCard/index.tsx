@@ -1,5 +1,4 @@
-import { faSquare } from "@fortawesome/free-regular-svg-icons";
-import { faSquareCheck } from "@fortawesome/free-solid-svg-icons";
+import { faSquare,faSquareCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Card } from "./styled";
 
