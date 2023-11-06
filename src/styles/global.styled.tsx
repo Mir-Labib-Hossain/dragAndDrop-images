@@ -5,7 +5,6 @@ const GlobalStyle = createGlobalStyle`
     * {
         margin: 0;
         padding: 0;
-        
     }
 
     *, *:before, *:after {
@@ -24,17 +23,18 @@ const GlobalStyle = createGlobalStyle`
     svg{
         color:  ${({ theme }) => theme.primary};
     }
-    /* a{
-        text-decoration: none;
-        cursor: pointer;
-    } */
 
     p, span, h2,button {
         color:  ${({ theme }) => theme.primaryText};
+    }
+
+    *{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
     } 
-
     
+    .dragged .item {
+        opacity: 0.1;
+    }
 `;
 
 export default GlobalStyle;

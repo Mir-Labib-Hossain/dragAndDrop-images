@@ -1,21 +1,18 @@
-import React from "react";
-import { Container, DeleteButton } from "./styled";
-
 import { faImages } from "@fortawesome/free-regular-svg-icons";
 import { faSquareCheck, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Container, DeleteButton } from "./styled";
 
 type Props = {
-    handleUnSelectAll:()=>void
-    handleDelete:()=>void
-    totalSelected:number
+  handleUnSelectAll: () => void;
+  handleDelete: () => void;
+  totalSelected: number;
 };
 
-const Header = ({totalSelected,handleUnSelectAll,
-    handleDelete}: Props) => {
-    
-  return <>
-   <Container>
+const Header = ({ totalSelected, handleUnSelectAll, handleDelete }: Props) => {
+  return (
+    <>
+      <Container>
         {totalSelected > 0 ? (
           <>
             <h2>
@@ -33,7 +30,8 @@ const Header = ({totalSelected,handleUnSelectAll,
           </h2>
         )}
       </Container>
-      </>;
+    </>
+  );
 };
 
 export default Header;

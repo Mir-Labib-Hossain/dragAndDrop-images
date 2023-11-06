@@ -24,7 +24,8 @@ function App() {
     primaryText: "#FFF",
     error: "#EA3A30", // ScreenShot's 'Delete' text color
   };
-  const [isLight, setIsLight] = useState(false);
+  const [isLight, setIsLight] = useState(true);
+
   return (
     <ThemeProvider theme={isLight ? light : dark}>
       <GlobalStyle />

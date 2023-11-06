@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const Card = styled.div<{ image: string; selected?: boolean }>`
   border-radius: 8px;
-  border: 2px solid ${({ theme }) => theme.secondaryBg};
+  border: 2px solid ${({ theme }) => theme.transparent};
   background-image: url(${({ image }) => image});
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   padding: 10px;
-  transition: 0.5s ease-in-out;
+  /* transition: 0.5s ease-in-out; */
 
   svg {
     transition: 0.3s ease-in-out;
