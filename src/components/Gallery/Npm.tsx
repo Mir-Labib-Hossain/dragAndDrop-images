@@ -9,7 +9,7 @@ type Props = {
   handleAddImage: (url: string) => void;
 };
 
-const Npm = ({ images, handleSelectIds, selectedIds, handleAddImage, updateArray }: Props) => {
+const Npm = ({ images, handleSelectIds, selectedIds, updateArray }: Props) => {
   const itemRenderer = (image: IImage, index: number): JSX.Element => {
     return <ImageCard image={image} index={index} onClick={handleSelectIds} selected={selectedIds.includes(image.id)} className="item" />;
   };
