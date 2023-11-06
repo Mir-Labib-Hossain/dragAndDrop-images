@@ -4,6 +4,9 @@ export const Card = styled.div`
   border-radius: 8px;
   border: 2px dashed ${({ theme }) => theme.secondaryBg};
   background-color: ${({ theme }) => theme.addBtnBg};
+  aspect-ratio: 1 / 1;
+
+  /* padding: 100%; */
   
   label {
     cursor: pointer;

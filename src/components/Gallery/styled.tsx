@@ -57,15 +57,36 @@ export const DeleteButton = styled.button`
   }
 `;
 
+export const Body = styled.div`
+  position: relative;
+
+  /* padding: 30px; */
+  & > div:first-child {
+    background-color: ${({ theme }) => theme.primaryBg};
+    > div {
+      border-radius: 8px;
+      border: 2px solid ${({ theme }) => theme.secondaryBg};
+    }
+  }
+  & > div {
+    position: absolute;
+  }
+`;
+
 export const GridContainer = styled.div`
-  padding: 30px;
-  width: 100%;
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(5, 1fr); /* Creates 5 equal-width columns */
   gap: 1rem; /* Adjusting the gap as needed */
-
+  padding: 30px;
   & > div {
     aspect-ratio: 1 / 1;
+    cursor: grab;
+    & > div {
+      height: 100%;
+      /* background-color: ${({ theme }) => theme.secondaryBg}; */
+      
+    }
   }
 
   //// style for large 'image-card'
@@ -82,5 +103,14 @@ export const GridContainer = styled.div`
   }
   @media only screen and (max-width: 400px) {
     grid-template-columns: repeat(2, 1fr); /* Creates 2 equal-width columns */
+  }
+
+  .dragging {
+    cursor: grabbing !important;
+    box-shadow: 2px 20px 30px rgba(0, 0, 0, 0.2);
+    /* pointer-events: none;
+    touch-action: none;
+    -ms-touch-action: none; */
+    border-radius: 8px;
   }
 `;

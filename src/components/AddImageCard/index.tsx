@@ -12,15 +12,15 @@ const AddImageCard = ({ handleAddImage }: Props) => {
   };
 
   return (
-    <>
-      <input accept="image/*" id="contained-button-file" multiple type="file" hidden onChange={onChange} />
+    <div>
+      <input id="contained-button-file" accept=".png, .jpg, .jpeg" type="file" hidden onChange={onChange} />
       <Card>
         <label htmlFor="contained-button-file">
           <FontAwesomeIcon icon={faImage} style={{ fontSize: "25px" }} />
           <p>Add image</p>
         </label>
       </Card>
-    </>
+    </div>
   );
 };
 

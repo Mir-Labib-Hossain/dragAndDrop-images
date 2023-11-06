@@ -14,9 +14,21 @@ const theme:ITheme = {
   error: "#EA3A30", // ScreenShot's 'Delete' text color
 } ;
 
+const x= {
+  
+  
+    primary: "#53E762",
+    primaryBg: "#161A1D",
+    secondaryBg: "#22272B",
+    addBtnBg:"#2C333A",
+    primaryText: "#FFF",
+    error: "#EA3A30", // ScreenShot's 'Delete' text color
+  
+}
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={x}>
       <GlobalStyle />
       <App />
     </ThemeProvider>

@@ -28,7 +28,8 @@ const GlobalStyle = createGlobalStyle`
         cursor: pointer;
     } */
 
-    p, span, h1, * {
+    p, span, h2,button {
+        color:  ${({ theme }) => theme.primaryText};
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
     } 
 
